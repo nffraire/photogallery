@@ -1,0 +1,290 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: black;
+}
+
+header {
+    color: #007d7d;
+    background-color: white;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+body {
+    margin: 0 auto;
+    background-color: black;
+    min-width: 485px;
+    max-width: 1300px;
+    margin: auto;
+    padding: 10px;
+}
+
+nav {
+    margin: auto;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-top: 20px;
+    display: inline-flex
+}
+
+nav li {
+    display: inline;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: white;
+}
+
+[href="#top"] {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 5px 0px 0px 0px;
+}
+
+main {
+    background-color: white;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+}
+
+#about p, #gallery-h2 {
+    margin: auto;
+    width: 90%;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+
+p {
+font-size: 1.25em;
+}
+
+figure {
+    position: relative;
+    margin: auto;
+}
+
+figcaption {
+    font-size: 1.25em;
+
+}
+
+#chile-photo {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    color: #ffffff;
+  }
+
+  #guatemala-photo {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    color: #ffffff;
+  }
+
+  #hawaii-photo {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    color: #ffffff;
+  }
+
+  #iran-photo {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    color: #000000;
+  }
+
+  #ireland-photo {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    color: #000000;
+  }
+
+  #italy-photo {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    color: #000000;
+  }
+
+  #moab-photo {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    color: #ffffff;
+  }
+
+  #rockies-photo {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    color: #000000;
+  }
+
+  #switzerland-photo {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    color: #000000;
+  }
+
+  #UK-photo {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    color: #000000;
+  }
+
+  #USA-photo {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    color: #000000;
+  }
+
+  #wyoming-photo {
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    color: #ffffff;
+  }
+
+#contact {
+    background-color: black;
+    color: white;
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: center;
+}
+
+form {
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.fill-form {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 25px;
+    padding: 10px;
+}
+
+form h2, form p {
+    color: #ffffff;
+    text-align: center;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+input {
+    width: 90%;
+
+}
+
+::placeholder {
+    color: #007d7d;
+}
+
+.button {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+
+}
+
+footer {
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+/* MEDIA QUERY FOR 880PX */
+@media screen and (min-width: 880px) {
+    h1 {
+      text-align: left;
+      padding-left: 10px;
+      font-weight: bold;
+  }
+
+  #gallery{
+    display: grid;
+    grid-template-columns: auto auto; 
+    position: relative;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+}
+
+/* MEDIA QUERY FOR 1300PX */
+@media screen and (min-width: 1300px) {
+  
+     nav {
+        height: 100px;
+        text-align: right;
+      }
+
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+    
+      img {
+        width: 100%;
+      }
+    }

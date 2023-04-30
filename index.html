@@ -5,109 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tk Photography</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body><!--branding goes here-->
 <header>
     <h1>TK Photography</h1>
 </header>
         <nav>
-            <h2>Main Navigation</h2><!--navigation goes here ---->
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">top</a></li>
+                <li><a href="#top">top</a></li>
             </ul>
         </nav>
 <main>
-    <section>
+    <section id="about">
         <h2>About</h2><!--about me section goes here-->
-        <p>Hello! I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it's taken me all over the world.
-</p><!--photo gallery goes here-->
+        <p>Hello!</p><br> 
+        <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it's taken me all over the world.</p><!--photo gallery goes here-->
     </section>
-    <section>
+    <section id="gallery-h2">
         <h2>Gallery</h2>
         <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-        <div>
+        <div id="gallery">
             <figure>
-                <img src="Chile.png" alt="The tide at sunset.">
-                <figcaption>Chile, 2001</figcaption>
+                <img src="images/Chile.png" alt="The tide at sunset.">
+                <figcaption id="chile-photo">Chile, 2001</figcaption>
             </figure>
 
             <figure>
-                <img src="Guatemala.png" alt=""/>
-                <figcaption>Guatemala, 1997</figcaption>
+                <img src="images/Guatemala.png" alt="Purple sky over lake with flowers.">
+                <figcaption id="guatemala-photo">Guatemala, 1997</figcaption>
             </figure>
 
             <figure>
-                <img src=" Hawaii.png" alt=""/>
-                <figcaption>Hawaii, 2010</figcaption>
+                <img src="images/Hawaii.png" alt="The ocean with island and clouds.">
+                <figcaption id="hawaii-photo">Hawaii, 2010</figcaption>
             </figure>
 
             <figure>
-                <img src="Iran.png" alt=""/>
-                <figcaption>Iran, 1999</figcaption>
+                <img src="images/Iran.png" alt="Desert with plants and mountains.">
+                <figcaption id="iran-photo">Iran, 1999</figcaption>
             </figure>
 
             <figure>
-                <img src="Ireland.png" alt=""/>
-                <figcaption>Ireland, 2012</figcaption>
+                <img src="images/Ireland.png" alt="Green mountains with trees.">
+                <figcaption id="ireland-photo">Ireland, 2012</figcaption>
             </figure>
 
             <figure>
-                <img src="Italy.png" alt=""/>
-                <figcaption>Italy, 2015</figcaption>
+                <img src="images/Italy.png" alt="Lake with boat and mountain in background.">
+                <figcaption id="italy-photo">Italy, 2015</figcaption>
             </figure>
 
             <figure>
-                <img src="Moab-Desert.png" alt=""/>
-                <figcaption>Moab Desert, 2020</figcaption>
+                <img src="images/Moab-Desert.png" alt="Large rock formations at sunrise.">
+                <figcaption id="moab-photo">Moab Desert, 2020</figcaption>
             </figure>
 
             <figure>
-                <img src="Rocky-Mountains.png" alt=""/>
-                <figcaption>Rocky Mountains, 2009</figcaption>
+                <img src="images/Rocky-Mountains.png" alt="Rocks at the tide.">
+                <figcaption id="rocky-photo">Rocky Mountains, 2009</figcaption>
             </figure>
 
             <figure>
-                <img src="Switzerland.png" alt=""/>
-                <figcaption>Switzerland, 2014</figcaption>
+                <img src="images/Switzerland.png" alt="Snowy mountains and trees.">
+                <figcaption id="switzerland-photo">Switzerland, 2014</figcaption>
             </figure>
 
             <figure>
-                <img src="UK.png" alt=""/>
-                <figcaption>UK, 2005</figcaption>
+                <img src="images/UK.png" alt="Open valley with green fields.">
+                <figcaption id="uk-photo">UK, 2005</figcaption>
             </figure>
 
             <figure>
-                <img src="USA.png" alt=""/>
-                <figcaption>USA, 2021</figcaption>
+                <img src="images/USA.png" alt="Green field with flowers.">
+                <figcaption id="usa-photo">USA, 2021</figcaption>
             </figure>
 
             <figure>
-                <img src="Wyoming.png" alt=""/>
-                <figcaption>Wyoming, 2021</figcaption>
+                <img src="images/Wyoming.png" alt="Lake with trees and mountains in background.">
+                <figcaption id="wyoming-photo">Wyoming, 2021</figcaption>
             </figure>
         </div>
-     </section>
-     <section>
+    </section> 
+
+     <section id="contact">
         <form>
             <h2>Contact</h2>
             <p>Please fill out this form and I'll connect with you soon.</p>
 
-            <div>
-                <label for="name">name</label>
+            <div class="fill-form">
+                <label for="name">Name</label>
                 <input type="text" id="name" placeholder="Your full name">
             </div>
-            <div>
-                <label for="email">email</label>
+            <div class="fill-form">
+                <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Enter your email address">
             </div>
-            <div>
-                <label for="message">message</label>
+            <div class="fill-form">
+                <label for="message">Message</label>
                 <input type="text" id="message" placeholder="What can I help you with?">
             </div>
-            <div>
+            <div class="button">
                 <input type="submit" value="submit" id="submit">
             </div>
         </form>
